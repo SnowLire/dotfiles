@@ -2,7 +2,7 @@ configuration{
     modi: "drun,run,clipmenu:env CM_LAUNCHER=rofi-script CM_SELECTIONS="clipboard" clipmenu";
     lines: 5;
     
-    font: "JetBrains Mono Nerd Font 11";
+    font: "Delugia 11";
     show-icons: true;
     icon-theme: "Oranchelo";
     terminal: "kitty";
