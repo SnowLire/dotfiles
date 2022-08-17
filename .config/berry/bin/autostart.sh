@@ -15,7 +15,6 @@ exec mpd &
 exec otd &
 exec flameshot &
 exec /usr/bin/openrgb --startminimized --profile 'Main' &
-exec transmission-gtk &
 
 sleep 3s
 pkill openrgb
