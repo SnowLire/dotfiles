@@ -29,12 +29,9 @@ ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 # doas
 alias sudoedit="doas rnano"
 
-# interactive commands
-alias cp="cp -i"
-alias rm="rm -i"
-
 # ls
-alias ll="ls -lah"
+alias ls="ls --color=auto"
+alias ll="ls -lAh"
 alias la="ls -A"
 
 # goodies
