@@ -4,7 +4,6 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 
 export PATH="$PATH:$HOME/.local/bin"
-export ZSH=$HOME/.oh-my-zsh
 
 export PNPM_HOME="/home/snowlire/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
@@ -18,25 +17,14 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_ignore_space
 
-ZSH_AUTOSUGGEST_STRATEGY=(completion history)
-
-COMPLETION_WAITING_DOTS="%F{blue}waiting...%"
-
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-plugins=(
-  git
-  urltools
-  bgnotify
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-
-source $ZSH/oh-my-zsh.sh
-
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zshcache_time="$(date +%s%N)"
 
-autoload -Uz add-zsh-hook
+source /usr/share/doc/pkgfile/command-not-found.zsh
+source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+antidote load
+
+ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
 # doas
 alias sudoedit="doas rnano"
@@ -52,5 +40,3 @@ alias la="ls -A"
 # goodies
 alias btw="fastfetch --logo redstar"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-
-eval "$(starship init zsh)"
