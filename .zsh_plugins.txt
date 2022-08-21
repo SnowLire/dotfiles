@@ -1,4 +1,5 @@
 zshzoo/zfunctions
+zshzoo/cd-ls
 
 ohmyzsh/ohmyzsh   path:plugins/colored-man-pages
 ohmyzsh/ohmyzsh   path:plugins/bgnotify
