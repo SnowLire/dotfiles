@@ -1,7 +1,19 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-right_format = "$cmd_duration | $time"
+format = """
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$python\
+$rust\
+$nodejs\
+$cmd_duration\
+$line_break\
+$character"""
+
+right_format = "$time"
 
 # Inserts a blank line between shell prompts
 add_newline = true
@@ -9,16 +21,9 @@ add_newline = true
 [cmd_duration]
 format = '\([⏱ $duration]($style)\)'
 
-[deno]
-format = '\([$symbol($version)]($style)\)'
-
 [directory]
 read_only = " "
 truncate_to_repo = false
-
-[docker_context]
-symbol = " "
-format = '\([$symbol$context]($style)\)'
 
 [git_branch]
 symbol = " "
@@ -27,17 +32,9 @@ format = '[$symbol$branch]($style)'
 [git_status]
 format = '([\($all_status$ahead_behind\)]($style))'
 
-[memory_usage]
-symbol = " "
-format = '\($symbol[$ram( | $swap)]($style)\)'
-
 [nodejs]
 symbol = " "
 format = '\([$symbol($version)]($style)\)'
-
-[package]
-symbol = " "
-format = '\([$symbol$version]($style)\)'
 
 [python]
 symbol = " "
@@ -47,11 +44,6 @@ format = '\([${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\)'
 symbol = " "
 format = '\([$symbol($version)]($style)\)'
 
-[sudo]
-format = '\([as $symbol]\)'
-
-
 [time]
 disabled = false
 format = '\([$time]($style)\)'
-
