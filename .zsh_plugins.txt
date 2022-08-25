@@ -4,11 +4,9 @@ Tarrasch/zsh-command-not-found
 Valiev/almostontop
 hlissner/zsh-autopair
 
-axieax/zsh-starship
-
 marlonrichert/zsh-autocomplete
 clarketm/zsh-completions
-RobSis/zsh-completion-generator
+Aloxaf/gencomp
 mattmc3/zephyr path:plugins/completions
 
 zsh-users/zsh-syntax-highlighting

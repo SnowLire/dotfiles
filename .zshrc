@@ -27,3 +27,5 @@ alias la="ls -A"
 # goodies
 alias btw="fastfetch --logo redstar"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+eval $(starship init zsh)
