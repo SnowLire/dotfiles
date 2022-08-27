@@ -3,14 +3,12 @@
 
 format = """
 $directory\
-$git_branch\
-$git_state\
 $git_status\
-$python\
-$rust\
-$nodejs\
+$git_branch\
 $cmd_duration\
 $line_break\
+$python\
+$rust\
 $character"""
 
 right_format = "$time"
@@ -19,31 +17,31 @@ right_format = "$time"
 add_newline = true
 
 [cmd_duration]
-format = '\([⏱ $duration]($style)\)'
+format = '[$duration]($style)'
 
 [directory]
 read_only = " "
 truncate_to_repo = false
+style = "blue"
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
 
 [git_branch]
-symbol = " "
-format = '[$symbol$branch]($style)'
+format = "[$branch]($style)"
 
 [git_status]
-format = '([\($all_status$ahead_behind\)]($style))'
-
-[nodejs]
-symbol = " "
-format = '\([$symbol($version)]($style)\)'
+format = "[[($all_status)](218) ($ahead_behind$stashed)]($style)"
 
 [python]
-symbol = " "
-format = '\([${symbol}${pyenv_prefix}(${version})(\($virtualenv\))]($style)\)'
+symbol = ""
+format = "[($symbol $virtualenv)]($style)"
 
 [rust]
-symbol = " "
-format = '\([$symbol($version)]($style)\)'
+symbol = ""
+format = "[($symbol $version)]($style)"
 
 [time]
 disabled = false
-format = '\([$time]($style)\)'
+format = "[$time]($style)"
