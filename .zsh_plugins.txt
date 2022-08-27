@@ -1,7 +1,6 @@
 ael-code/zsh-colored-man-pages
 MichaelAquilina/zsh-auto-notify
 Tarrasch/zsh-command-not-found
-Valiev/almostontop
 hlissner/zsh-autopair
 
 marlonrichert/zsh-autocomplete
