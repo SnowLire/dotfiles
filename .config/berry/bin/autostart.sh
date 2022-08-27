@@ -3,6 +3,7 @@
 killall -9 xfsettingsd xfce-polkit clipmenud xfce4-power-manager mpd flameshot
 
 sxhkd -c $HOME/.config/berry/sxhkdrc &
+ibus-daemon -dxrR &
 
 xfsettingsd &
 /usr/lib/xfce-polkit/xfce-polkit &
