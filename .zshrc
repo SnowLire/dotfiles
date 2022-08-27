@@ -1,3 +1,7 @@
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 setopt autocd
 setopt interactivecomments
 setopt MENU_COMPLETE
@@ -13,11 +17,7 @@ zshcache_time="$(date +%s%N)"
 source /usr/share/doc/pkgfile/command-not-found.zsh
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
-
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
-
-# doas
-alias sudoedit="doas rnano"
 
 # ls
 alias ls="ls --color=auto"
@@ -28,4 +28,5 @@ alias la="ls -A"
 alias btw="fastfetch --logo redstar"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
-eval $(starship init zsh)
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
