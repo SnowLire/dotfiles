@@ -20,9 +20,9 @@ antidote load
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
 # ls
-alias ls="ls --color=auto"
-alias ll="ls -lAh"
-alias la="ls -A"
+alias ls="exa"
+alias ll="exa -la"
+alias la="exa -a"
 
 # goodies
 alias btw="fastfetch --logo redstar"
