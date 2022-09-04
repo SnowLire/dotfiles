@@ -4,7 +4,6 @@ configuration{
 
     font:             "Delugia 11";
     show-icons:       true;
-    icon-theme:       "Oranchelo";
     terminal:         "kitty";
     drun-display-format: "{icon} {name}";
 
