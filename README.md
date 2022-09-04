@@ -7,9 +7,10 @@ My personal dotfiles. Changes come as I find interesting things to add.
 ![img](assets/desktop.png)
 - Bar: [Polybar](https://github.com/polybar/polybar)
 - Application Launcher: [Rofi](https://github.com/davatorium/rofi)
+- Notification: [Dunst](https://dunst-project.org/)
 - Terminal Emulator: [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Shell: [ZSH](https://www.zsh.org/) with [Antidote](https://getantidote.github.io/)
-- Prompt: [Starship](https://starship.rs)
+- Prompt: [P10K](https://github.com/romkatv/powerlevel10k)
 - Music Player: [MPD](https://www.musicpd.org/) with [Ymuse](https://github.com/yktoo/ymuse)
 - Color Scheme: [Catppuccin](https://github.com/catppuccin/catppuccin)
 - Font: [Delugia Code](https://github.com/adam7/delugia-code)
@@ -17,3 +18,4 @@ My personal dotfiles. Changes come as I find interesting things to add.
 ### Other stuff that I use:
 - [Flameshot](https://github.com/flameshot-org/flameshot)
 - [Nitrogen](https://github.com/l3ib/nitrogen)
+- [IBus](https://github.com/ibus/ibus)
