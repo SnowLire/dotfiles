@@ -8,7 +8,6 @@ romkatv/powerlevel10k
 
 marlonrichert/zsh-autocomplete
 clarketm/zsh-completions
-Aloxaf/gencomp
 mattmc3/zephyr path:plugins/completions
 
 zsh-users/zsh-syntax-highlighting
