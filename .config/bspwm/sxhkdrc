@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Reload sxhkd keybinds
+super + Escape
+	pkill -USR1 -x sxhkd
+	
+##---------- Applications ----------##
+
+super + {f,w,e}
+	{thunar,firefox,geany}
+
+super + d
+	rofi -show
+
+super + Return
+	kitty
+
+Print
+	flameshot gui
+
+XF86Audio{RaiseVolume,LowerVolume}
+	amixer sset Master {5%+, 5%-}
+
+XF86AudioMute
+	amixer sset Master toggle
+
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+##---------- bspwm Hotkeys --------##
+
+# Restart bspwm
+super + shift + r
+  bspc wm -r
+
+# Quit bspwm
+super + shift + q
+  bspc quit
+
+# Kill focused window
+super + q
+	bspc node -c
+
+# Toggle floating/tiled
+super + n
+	bspc node -t {floating,tiled}
+
+# Move to/Send window to workspace
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-7}'
+
+# Tab between windows
+super + {_,shift +} Tab
+	bspc node -f {next,prev}
+
+# Toggle fullscreen/Maximize
+super + m
+	bspc node -t "~"fullscreen

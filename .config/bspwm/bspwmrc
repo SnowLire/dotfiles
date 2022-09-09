@@ -1,0 +1,68 @@
+#!/bin/bash
+
+##---------- Functions ----------##
+rule() { bspc rule -a "$@" & }
+config() { bspc config "$@" & }
+start() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
+
+##----------- Startup -----------##
+# Bindings
+sxhkd -c $HOME/.config/bspwm/sxhkdrc &
+
+# Xfce4 stuff
+xfsettingsd &
+xfce4-power-manager &
+thunar --daemon &
+/usr/lib/xfce-polkit/xfce-polkit &
+
+# Polybar
+polybar -q main -c .config/bspwm/polybar/config.ini &
+
+# Input Method
+ibus-daemon -dxrR &
+
+# Clipboard
+clipmenud &
+
+# Wallpaper
+nitrogen --restore 
+
+# Misc
+mpd &
+otd &
+flameshot &
+openrgb --startminimized --profile 'Main' &
+
+##------------ Rules ------------##
+rule kitty                          state=floating
+rule mpv                            state=floating
+rule Thunar                         state=floating
+rule Bitwarden                      state=pseudo-tiled
+rule discord-canary                 desktop=^1
+rule firefox                        desktop=^2
+rule 'osu!.exe'                     desktop=^4 state=fullscreen
+
+##----------- Configs -----------##
+bspc monitor -d 1 2 3 4 5 6 7
+
+config border_width                3
+config window_gap                  5
+config split_ratio                 0.5
+
+config focused_border_color        "#B26089"
+config normal_border_color         "#496886"
+config active_border_color         "#496886"
+
+config borderless_monocle          true
+config gapless_monocle             true
+config top_padding                 20
+config bottom_padding              0
+config left_padding                0
+config right_padding               0
+config focus_follows_pointer       false
+config ignore_ewmh_focus           true
+
+config pointer_modifier            Mod4
+config pointer_action1             move
+config pointer_action2             resize_side
+config pointer_action2             resize_corner
