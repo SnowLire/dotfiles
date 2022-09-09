@@ -9,6 +9,12 @@ start() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
 # Bindings
 sxhkd -c $HOME/.config/bspwm/sxhkdrc &
 
+# Disable client-side decorations
+gsettings set org.gnome.desktop.wm.preferences button-layout "" &
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
 # Xfce4 stuff
 xfsettingsd &
 xfce4-power-manager &
