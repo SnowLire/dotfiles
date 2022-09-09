@@ -3,14 +3,19 @@
 
 My personal dotfiles. Changes come as I find interesting things to add.
 
-- WM: [Berry](https://berrywm.org/)
-![img](assets/desktop.png)
+- WMs: 
+  - [Berry](https://berrywm.org/)
+  ![img](assets/desktop-berry.png)
+  - [Bspwm](https://github.com/baskerville/bspwm)
+  ![img](assets/desktop-bspwm.png)
 - Bar: [Polybar](https://github.com/polybar/polybar)
 - Application Launcher: [Rofi](https://github.com/davatorium/rofi)
+  - Clipboard management [Clipmenu](https://github.com/cdown/clipmenu)
 - Notification: [Dunst](https://dunst-project.org/)
 - Terminal Emulator: [Kitty](https://sw.kovidgoyal.net/kitty/)
-- Shell: [ZSH](https://www.zsh.org/) with [Antidote](https://getantidote.github.io/)
-- Prompt: [P10K](https://github.com/romkatv/powerlevel10k)
+  - Shell: [ZSH](https://www.zsh.org/)
+  - Plugin manager: [Antidote](https://getantidote.github.io/)
+  - Prompt: [P10K](https://github.com/romkatv/powerlevel10k)
 - Music Player: [MPD](https://www.musicpd.org/) with [Ymuse](https://github.com/yktoo/ymuse)
 - Color Scheme: [Catppuccin](https://github.com/catppuccin/catppuccin)
 - Font: [Delugia Code](https://github.com/adam7/delugia-code)
