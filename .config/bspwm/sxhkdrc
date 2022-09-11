@@ -18,6 +18,9 @@ super + Return
 Print
 	flameshot gui
 
+shift + Print
+	flameshot launcher
+
 XF86Audio{RaiseVolume,LowerVolume}
 	amixer sset Master {5%+, 5%-}
 
