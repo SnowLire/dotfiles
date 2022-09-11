@@ -3,7 +3,7 @@
 # Reload sxhkd keybinds
 super + Escape
 	pkill -USR1 -x sxhkd
-	
+
 ##---------- Applications ----------##
 
 super + {f,w,e}
@@ -31,7 +31,7 @@ XF86Audio{Next,Prev,Play,Stop}
 
 # Restart bspwm
 super + shift + r
-  bspc wm -r
+	bspc wm -r
 
 # Quit bspwm
 super + shift + q
@@ -55,4 +55,4 @@ super + {_,shift +} Tab
 
 # Toggle fullscreen/Maximize
 super + m
-	bspc node -t "~"fullscreen
+	bspc node -t '~'fullscreen
