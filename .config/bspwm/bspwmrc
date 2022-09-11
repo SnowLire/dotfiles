@@ -3,7 +3,6 @@
 ##---------- Functions ----------##
 rule() { bspc rule -a "$@" & }
 config() { bspc config "$@" & }
-start() { pkill -x "$1"; { sleep 0.1; "$@" & }; }
 
 ##----------- Startup -----------##
 # Bindings
@@ -71,4 +70,4 @@ config ignore_ewmh_focus           true
 config pointer_modifier            Mod4
 config pointer_action1             move
 config pointer_action2             resize_side
-config pointer_action2             resize_corner
+config pointer_action3             resize_corner
