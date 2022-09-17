@@ -13,7 +13,7 @@ super + d
 	rofi -show
 
 super + Return
-	kitty
+	wezterm-gui
 
 Print
 	flameshot gui

@@ -1,10 +1,10 @@
 configuration{
-    modi: "drun,clipmenu:env CM_LAUNCHER=rofi-script CM_SELECTIONS="clipboard" clipmenu";
-    lines:            5;
+    modi : "drun,clipmenu:env CM_LAUNCHER=rofi-script CM_SELECTIONS="clipboard" clipmenu";
+    lines: 5;
 
-    font:             "Delugia 11";
-    show-icons:       true;
-    terminal:         "kitty";
+    font               : "Delugia 11";
+    show-icons         : true;
+    terminal           : "kitty";
     drun-display-format: "{icon} {name}";
 
     location:         0;

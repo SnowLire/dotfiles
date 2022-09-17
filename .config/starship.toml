@@ -20,13 +20,13 @@ add_newline = true
 format = '[$duration]($style)'
 
 [directory]
-read_only = " "
+read_only        = " "
 truncate_to_repo = false
-style = "blue"
+style            = "blue"
 
 [character]
 success_symbol = "[❯](green)"
-error_symbol = "[❯](red)"
+error_symbol   = "[❯](red)"
 
 [git_branch]
 format = "[$branch]($style)"
@@ -44,4 +44,4 @@ format = "[($symbol $version)]($style)"
 
 [time]
 disabled = false
-format = "[$time]($style)"
+format   = "[$time]($style)"
