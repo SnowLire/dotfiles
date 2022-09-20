@@ -36,6 +36,7 @@ nitrogen --restore
 mpd &
 otd &
 openrgb --startminimized --profile 'Main' &
+wmname LG3D
 
 ##------------ Rules ------------##
 rule mpv                            state=floating
