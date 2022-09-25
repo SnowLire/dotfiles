@@ -25,12 +25,12 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
-# ls
+# Color ls aliases
 alias ls="exa"
 alias ll="exa -la"
 alias la="exa -a"
 
-# goodies
+# Misc aliases
 alias btw="fastfetch --logo redstar"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
