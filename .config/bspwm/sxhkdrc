@@ -53,8 +53,8 @@ super + {_,shift + }{1-9}
 	bspc {desktop -f,node -d} '^{1-7}'
 
 # Send window to screen edge
-super + {h,j,k,l}
-	bspc node -s {west,south,north,east}
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
 
 # Tab between windows
 super + {_,shift +} Tab
