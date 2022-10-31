@@ -41,6 +41,7 @@ wmname LG3D
 ##------------ Rules ------------##
 rule mpv                            state=floating
 rule Bitwarden                      state=pseudo-tiled
+rule discord                        desktop=^1
 rule discord-canary                 desktop=^1
 rule firefox                        desktop=^2
 rule code                           desktop=^3
