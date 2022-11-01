@@ -22,10 +22,10 @@ shift + Print
 	flameshot launcher
 
 XF86Audio{RaiseVolume,LowerVolume}
-	amixer sset Master {5%+, 5%-}
+	pulsemixer --change-volume {+5,-5}
 
 XF86AudioMute
-	amixer sset Master toggle
+	pulsemixer --toggle-mute
 
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
