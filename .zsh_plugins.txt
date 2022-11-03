@@ -6,8 +6,8 @@ mafredri/zsh-async
 
 romkatv/powerlevel10k
 
-marlonrichert/zsh-autocomplete
 clarketm/zsh-completions
 mattmc3/zephyr path:plugins/completions
-
-zsh-users/zsh-syntax-highlighting
+mattmc3/zephyr path:plugins/autosuggestions
+mattmc3/zephyr path:plugins/history
+mattmc3/zephyr path:plugins/syntax-highlighting
