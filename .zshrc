@@ -31,7 +31,6 @@ alias ll="exa -la"
 alias la="exa -a"
 
 # Misc aliases
-alias btw="fastfetch --logo redstar"
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
