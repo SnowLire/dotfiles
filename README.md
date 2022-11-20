@@ -10,7 +10,7 @@ My personal dotfiles. Changes come as I find interesting things to add.
   ![img](assets/desktop-bspwm.png)
 - Bar: [Polybar](https://github.com/polybar/polybar)
 - Application Launcher: [Rofi](https://github.com/davatorium/rofi)
-  - Clipboard management [Clipmenu](https://github.com/cdown/clipmenu)
+  - Clipboard management: [Clipmenu](https://github.com/cdown/clipmenu)
   - [Kaomoji](https://github.com/heyrict/kaomoji-rofi)
 - Notification: [Dunst](https://dunst-project.org/)
 - Terminal Emulator: [Kitty](https://sw.kovidgoyal.net/kitty/)
