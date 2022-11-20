@@ -12,6 +12,9 @@ super + {f,w,e}
 super + d
 	rofi -show
 
+super + k
+	rofi-kaomoji
+
 super + Return
 	wezterm-gui
 

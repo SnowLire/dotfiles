@@ -3,18 +3,21 @@
 # Reload sxhkd keybinds
 super + Escape
 	pkill -USR1 -x sxhkd
-	
+
 ##---------- Applications ----------##
 
 super + {f,w,e}
 	{thunar,firefox,geany}
-	
+
 super + d
 	rofi -show
-	
+
+super +k
+	rofi-kaomoji
+
 super + Return
 	kitty
-	
+
 Print
 	flameshot gui
 
