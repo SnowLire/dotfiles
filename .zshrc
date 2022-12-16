@@ -12,10 +12,13 @@ setopt hist_ignore_dups
 setopt hist_ignore_space
 
 # Keybindings
-bindkey "^[[H"    beginning-of-line # Home
-bindkey "^[[F"    end-of-line       # End
-bindkey "^[[3~"   delete-char       # Del
-bindkey "^[[3;5~" kill-word         # Ctrl-Del
+bindkey "^[[H"    beginning-of-line    # Home
+bindkey "^[[F"    end-of-line          # End
+bindkey "^[[3~"   delete-char          # Del
+bindkey "^[[3;5~" kill-word            # Ctrl-Del
+bindkey "^H"      backward-delete-word # Ctrl-Bp
+bindkey "^[[1;5C" forward-word         # Ctrl-Arrow_right
+bindkey "^[[1;5D" backward-word        # Ctrl-Arrow_left
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zshcache_time="$(date +%s%N)"
