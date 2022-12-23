@@ -25,7 +25,7 @@ shift + Print
 	flameshot launcher
 
 XF86Audio{RaiseVolume,LowerVolume}
-	pulsemixer --change-volume {+5,-5}
+	pulsemixer --change-volume {+1,-1}
 
 XF86AudioMute
 	pulsemixer --toggle-mute
