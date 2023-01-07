@@ -12,7 +12,7 @@ super + {f,w,e}
 super + d
 	rofi -show
 
-super + k
+super + o
 	rofi-kaomoji
 
 super + Return
