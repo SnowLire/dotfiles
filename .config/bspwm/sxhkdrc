@@ -19,10 +19,10 @@ super + Return
 	wezterm-gui
 
 Print
-	flameshot gui
-
+	screenshot-selection
+	
 shift + Print
-	flameshot launcher
+	screenshot-full
 
 XF86Audio{RaiseVolume,LowerVolume}
 	pulsemixer --change-volume {+1,-1}
