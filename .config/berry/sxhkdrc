@@ -12,20 +12,23 @@ super + {f,w,e}
 super + d
 	rofi -show
 
-super +k
+super + o
 	rofi-kaomoji
 
 super + Return
-	kitty
+	wezterm-gui
 
 Print
-	flameshot gui
+	screenshot-selection
+	
+shift + Print
+	screenshot-full
 
 XF86Audio{RaiseVolume,LowerVolume}
-	amixer sset Master {5%+, 5%-}
+	pulsemixer --change-volume {+1,-1}
 
 XF86AudioMute
-	amixer sset Master toggle
+	pulsemixer --toggle-mute
 
 XF86Audio{Next,Prev,Play,Stop}
 	mpc {next,prev,toggle,stop}
