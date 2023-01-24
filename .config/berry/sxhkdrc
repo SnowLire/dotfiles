@@ -1,4 +1,4 @@
-# Hotkeys
+#!/bin/bash
 
 # Reload sxhkd keybinds
 super + Escape
@@ -19,10 +19,10 @@ super + Return
 	wezterm-gui
 
 Print
-	screenshot-selection
+	flameshot gui
 	
 shift + Print
-	screenshot-full
+	flameshot launcher
 
 XF86Audio{RaiseVolume,LowerVolume}
 	pulsemixer --change-volume {+1,-1}
