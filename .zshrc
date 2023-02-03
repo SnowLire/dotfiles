@@ -2,8 +2,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-setopt autocd
-setopt interactivecomments
+setopt AUTO_CD
+setopt INTERACTIVE_COMMENTS
 setopt MENU_COMPLETE
 setopt COMPLETE_IN_WORD
 
