@@ -35,12 +35,12 @@ nitrogen --restore
 # Misc
 mpd &
 otd &
-openrgb --startminimized --profile 'Main' &
 wmname LG3D
 
 ##------------ Rules ------------##
 rule mpv                            state=floating
 rule Bitwarden                      state=pseudo-tiled
+rule armcord                        desktop=^1
 rule discord                        desktop=^1
 rule discord-canary                 desktop=^1
 rule firefox                        desktop=^2
