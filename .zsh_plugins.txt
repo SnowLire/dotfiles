@@ -8,6 +8,7 @@ romkatv/powerlevel10k
 
 clarketm/zsh-completions
 mattmc3/zephyr path:plugins/completion
-mattmc3/zephyr path:plugins/autosuggestions
 mattmc3/zephyr path:plugins/history
-mattmc3/zephyr path:plugins/syntax-highlighting
+
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
