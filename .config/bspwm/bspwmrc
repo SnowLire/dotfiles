@@ -35,6 +35,7 @@ nitrogen --restore
 # Misc
 mpd &
 otd &
+setxkbmap -option 'compose:menu'
 wmname LG3D
 
 ##------------ Rules ------------##
