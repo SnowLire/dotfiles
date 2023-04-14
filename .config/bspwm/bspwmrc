@@ -45,7 +45,7 @@ rule armcord                        desktop=^1
 rule discord                        desktop=^1
 rule discord-canary                 desktop=^1
 rule firefox                        desktop=^2
-rule code                           desktop=^3
+rule vscodium                       desktop=^3
 rule 'osu!.exe'                     desktop=^4 state=fullscreen
 
 ##----------- Configs -----------##
