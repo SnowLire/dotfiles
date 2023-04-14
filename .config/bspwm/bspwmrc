@@ -35,8 +35,8 @@ nitrogen --restore
 # Misc
 mpd &
 otd &
-setxkbmap -option 'compose:menu'
-wmname LG3D
+setxkbmap -option 'compose:menu' &
+wmname LG3D &
 
 ##------------ Rules ------------##
 rule mpv                            state=floating
