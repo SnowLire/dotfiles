@@ -41,9 +41,9 @@ wmname LG3D &
 ##------------ Rules ------------##
 rule mpv                            state=floating
 rule Bitwarden                      state=pseudo-tiled
-rule armcord                        desktop=^1
+rule ArmCord                        desktop=^1
 rule firefox                        desktop=^2
-rule vscodium                       desktop=^3
+rule VSCodium                       desktop=^3
 rule 'osu!.exe'                     desktop=^4 state=fullscreen
 
 ##----------- Configs -----------##
