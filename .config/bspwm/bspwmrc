@@ -23,6 +23,9 @@ thunar --daemon &
 # Polybar
 polybar -q main -c .config/bspwm/polybar/config.ini &
 
+# Notification
+dunst &
+
 # Input Method
 ibus-daemon -dxrR &
 
