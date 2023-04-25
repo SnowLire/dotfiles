@@ -15,8 +15,3 @@ exec thunar --daemon &
 exec mpd &
 exec otd &
 exec flameshot &
-exec /usr/bin/openrgb --startminimized --profile 'Main' &
-
-sleep 3s
-pkill openrgb
-
