@@ -36,7 +36,6 @@ clipmenud &
 nitrogen --restore 
 
 # Misc
-mpd &
 otd &
 setxkbmap -option 'compose:menu' &
 wmname LG3D &
@@ -44,7 +43,7 @@ wmname LG3D &
 ##------------ Rules ------------##
 rule mpv                            state=floating
 rule Bitwarden                      state=pseudo-tiled
-rule ArmCord                        desktop=^1
+rule VencordDesktop                 desktop=^1
 rule firefox                        desktop=^2
 rule VSCodium                       desktop=^3
 rule 'osu!.exe'                     desktop=^4 state=fullscreen
