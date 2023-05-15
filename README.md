@@ -8,6 +8,7 @@ My personal dotfiles. Changes come as I find interesting things to add.
   ![img](assets/desktop-berry.png)
   - [Bspwm](https://github.com/baskerville/bspwm)
   ![img](assets/desktop-bspwm.png)
+- Compositor: [Picom](https://github.com/jonaburg/picom)
 - Bar: [Polybar](https://github.com/polybar/polybar)
 - Application Launcher: [Rofi](https://github.com/davatorium/rofi)
   - Clipboard management: [Clipmenu](https://github.com/cdown/clipmenu)
