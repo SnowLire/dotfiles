@@ -11,4 +11,4 @@ mattmc3/zephyr path:plugins/completion
 mattmc3/zephyr path:plugins/history
 
 zsh-users/zsh-autosuggestions
-zsh-users/zsh-syntax-highlighting
+zdharma-continuum/fast-syntax-highlighting
