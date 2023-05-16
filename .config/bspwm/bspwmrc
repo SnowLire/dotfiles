@@ -27,7 +27,7 @@ polybar -q main -c .config/bspwm/polybar/config.ini &
 dunst &
 
 # Compositor
-picon &
+picom &
 
 # Input Method
 ibus-daemon -dxrR &
