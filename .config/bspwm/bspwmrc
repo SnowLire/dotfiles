@@ -39,7 +39,6 @@ clipmenud &
 nitrogen --restore 
 
 # Misc
-otd &
 setxkbmap -option 'compose:menu' &
 wmname LG3D &
 
