@@ -10,6 +10,7 @@ timeout = 2
 
 indicate_hidden = yes
 markup = full
+format = "<b>%a</b>\n%s"
 
 frame_color = "#89B4FA"
 separator_height = 4
