@@ -28,11 +28,6 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 
-# Color ls aliases
-alias ls="exa"
-alias ll="exa -la"
-alias la="exa -a"
-
 # Misc aliases
 alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
