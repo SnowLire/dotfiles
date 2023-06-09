@@ -29,12 +29,6 @@ dunst &
 # Compositor
 picom &
 
-# Input Method
-ibus-daemon -dxrR &
-
-# Clipboard
-clipmenud &
-
 # Wallpaper
 nitrogen --restore 
 
