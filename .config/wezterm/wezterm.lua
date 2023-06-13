@@ -25,9 +25,10 @@ return {
   font_size            = 11,
   default_cursor_style = 'SteadyBar',
 
-  enable_scroll_bar = true,
-  use_fancy_tab_bar = false,
-  scrollback_lines  = 2000,
+  enable_scroll_bar     = true,
+  use_fancy_tab_bar     = false,
+  scrollback_lines      = 2000,
+  enable_kitty_graphics = true,
 
   disable_default_key_bindings = true,
   keys                         = bindings
