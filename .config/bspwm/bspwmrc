@@ -40,7 +40,7 @@ wmname LG3D &
 rule mpv                            state=floating
 rule Bitwarden                      state=floating
 rule qalculate-gtk                  state=floating
-rule webcord                        desktop=^1
+rule WebCord                        desktop=^1
 rule firefox                        desktop=^2
 rule VSCodium                       desktop=^3
 rule 'osu!.exe'                     desktop=^4 state=fullscreen
